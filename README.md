@@ -2,7 +2,7 @@
 
 # Prediction Market Maker
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC--BY--NC%204.0-orange.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)
 [![CI](https://img.shields.io/badge/Tests-pytest%20%2B%20coverage-brightgreen.svg)](#testing)
 [![Code Style: black](https://img.shields.io/badge/code%20style-black-000.svg)](https://github.com/psf/black)
@@ -124,4 +124,5 @@ This produces a term-missing report to highlight gaps; prioritize core logic fir
 
 ## License
 
-MIT. See `LICENSE`.
+Released under Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Commercial use requires a separate license.
+See `LICENSE` for full terms.
