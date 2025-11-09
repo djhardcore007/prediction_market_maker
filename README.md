@@ -98,6 +98,16 @@ for o in orders:
       print(o.side, o.price, o.qty)
 ```
 
+## Examples
+
+- Kalshi HTTP + WebSocket (signed requests): see `examples/kalshi/`.
+      - Requires env:
+            - `KALSHI_API_KEY_ID`
+            - `KALSHI_PRIVATE_KEY_PATH` (PEM file; store under `secrets/` which is gitignored)
+            - Optional: `KALSHI_ENV=demo|prod` (default demo)
+      - Run the example:
+            - `python -m examples.kalshi.main`
+
 ## Testing & Coverage
 
 Tests use `pytest` with `pytest-cov` for coverage. Run:

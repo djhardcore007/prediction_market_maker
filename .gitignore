@@ -48,6 +48,7 @@ Thumbs.db
 data/
 tmp/
 *.sqlite3
+secrets/
 
 ### Prometheus / runtime dumps ###
 prometheus_data/
@@ -58,3 +59,9 @@ prometheus_data/
 ### Generated HTML docs (if later added) ###
 site/
 docs/_build/
+
+### Environment files ###
+.env
+.env.*.local
+.env.local
+.env.*.local

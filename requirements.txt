@@ -7,6 +7,10 @@ pandas>=1.5
 SQLAlchemy>=2
 PyYAML>=6
 typing-extensions>=4.6
+requests>=2.31
+cryptography>=41
+websockets>=11
+python-dotenv>=1.0
 
 # Dev / tooling
 pytest>=7
