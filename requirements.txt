@@ -1,0 +1,15 @@
+# Sync with pyproject.toml dependencies for uv/pip usage
+numpy>=1.23
+pydantic>=2
+rich>=13
+prometheus-client>=0.16
+pandas>=1.5
+SQLAlchemy>=2
+PyYAML>=6
+typing-extensions>=4.6
+
+# Dev / tooling
+pytest>=7
+pytest-cov>=5
+black>=23
+mypy>=1.6
