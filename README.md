@@ -8,10 +8,21 @@
 [![Code Style: black](https://img.shields.io/badge/code%20style-black-000.svg)](https://github.com/psf/black)
 [![Type Checked: mypy](https://img.shields.io/badge/types-mypy-blue.svg)](https://mypy-lang.org/)
 [![Package: uv](https://img.shields.io/badge/installer-uv-purple.svg)](https://github.com/astral-sh/uv)
+<br/>
+<p>
+      <a href="https://x.com/djhardcore007" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/X-@djhardcore007-1DA1F2?logo=x&logoColor=white&style=flat-square" alt="Follow on X" />
+      </a>
+      <a href="https://www.buymeacoffee.com/florencejio" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/Coffee-Buy%20Me-FFDD00?logo=buy-me-a-coffee&logoColor=000&style=flat-square" alt="Buy Me A Coffee" />
+      </a>
+</p>
 
 </div>
 
 Modular, testable market making toolkit for binary prediction markets. Supports hybrid orderbook and AMM venue abstractions, inventory-aware pricing, and reproducible backtests.
+
+> ⭐ If you find this useful, please star the repo. It helps others discover the project and motivates continued development.
 
 ## Features
 
@@ -121,6 +132,7 @@ This produces a term-missing report to highlight gaps; prioritize core logic fir
 - More scenarios (mean reversion, jump events)
 - PnL attribution & reporting module
 - CLI for venue + strategy selection
+
 
 ## License
 
