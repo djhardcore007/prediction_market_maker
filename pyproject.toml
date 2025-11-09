@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.24.2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prediction-market-maker"
+version = "0.1.0"
+description = "Modular market maker toolkit for prediction markets (orderbook + AMM venues)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Your Name", email = "you@example.com" },
+]
+license = { text = "MIT" }
+keywords = ["market-making", "prediction-markets", "trading", "AMM", "orderbook"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy>=1.23",
+  "pydantic>=2",
+  "rich>=13",
+  "prometheus-client>=0.16",
+  "pandas>=1.5",
+  "SQLAlchemy>=2",
+  "PyYAML>=6",
+  "typing-extensions>=4.6",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7",
+  "black>=23",
+  "mypy>=1.6",
+  "pytest-cov>=5",
+]
+
+[project.scripts]
+pm-live = "prediction_market_maker.app.run_live:main"
+pm-backtest = "prediction_market_maker.app.run_backtest:main"
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=src --cov-report=term-missing"
+pythonpath = ["."]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/prediction_market_maker"]

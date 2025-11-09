@@ -1,0 +1,35 @@
+# Default configuration for src
+
+app:
+  mode: backtest  # backtest|live
+  log_level: INFO
+  seed: 42
+
+venues:
+  - name: mock
+    type: mock
+    fee_bps: 10
+    throttle_per_s: 10
+
+markets:
+  - id: "YES_2025_EVENT"
+    venue: mock
+    symbol: "EVT-YES"
+    tick_size: 0.01
+    lot_size: 1
+
+risk:
+  max_notional: 10000
+  per_market_max_position: 1000
+  per_venue_max_orders_per_min: 600
+
+pricing:
+  model: lmsr
+  params:
+    b: 100.0
+
+strategy:
+  name: binary_mm
+  params:
+    spread_bps: 100
+    inventory_alpha: 0.002
