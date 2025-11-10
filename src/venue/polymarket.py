@@ -224,7 +224,7 @@ class PolymarketVenue(Venue):
             "POLYMARKET_WS_URL", "wss://ws-subscriptions-clob.polymarket.com"
         )
         ws_url = ws_base.rstrip("/") + "/ws/market"
-        sub_msg = {"assets_ids": [asset_id], "type": "market"}
+        sub_msg = {"assets_ids": [asset_id], "type": "market", "auth": self._ws_auth()}
 
         async def _ping(ws):
             try:

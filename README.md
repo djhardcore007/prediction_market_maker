@@ -107,6 +107,14 @@ for o in orders:
             - Optional: `KALSHI_ENV=demo|prod` (default demo)
       - Run the example:
             - `python -m examples.kalshi.main`
+ - Polymarket WebSocket top-of-book streaming: see `examples/polymarket/`.
+      - Optional env:
+            - `POLYMARKET_API_KEY` (improves rate limits)
+            - `POLYMARKET_ASSET_ID` (numeric token_id; auto-picked if omitted)
+            - `POLYMARKET_WS_URL` (override websocket base; default public)
+            - `POLYMARKET_GAMMA_BASE` (override markets base; default Gamma API)
+      - Run the example:
+            - `python examples/polymarket/run_ws.py`
 
 ## Testing & Coverage
 
